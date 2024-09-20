@@ -17,7 +17,7 @@ function App() {
         {params => <AnimalDetail animalId={params.id} />}
       </Route> */}
       <Route path="/animals/:id" component={AnimalDetail} />
-      <Route component={fn404} />
+      <Route path="/*" component={fn404} />
     </Switch>
   );
 }
